@@ -10,6 +10,9 @@ body {
     text-align: center;
     text-decoration-color: aqua;
   }
+  #errormessage{
+      color: red
+  }
     article {
     text-align: center;
     font-weight: bold;
