@@ -1,4 +1,4 @@
-import getLocation from '../scripts/location.js';
+import getLocation from './location.js';
 
 // helper functions
 
