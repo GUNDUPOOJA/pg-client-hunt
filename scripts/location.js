@@ -41,7 +41,7 @@ export default function getLocation() {
       (position) => {
         document.querySelector('#device-lat').innerHTML = '';
         document.querySelector('#device-long').innerHTML = '';
-        document.querySelector('#locationAnswer').innerHTML = 'The Hunt Game';
+        document.querySelector('#locationAnswer').innerHTML = '?';
 
         if (position === undefined) {
           document.querySelector('#error-message').innerHTML =
