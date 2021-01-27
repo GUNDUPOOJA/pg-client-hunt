@@ -29,3 +29,10 @@ body {
   #error-message {
     color: red;
   }
+  .b{
+    background-color: bisque;
+        text-align: center;
+  }
+  button{
+    color:grey;
+  }

@@ -1,4 +1,4 @@
- 
+  
 // import default object with a local camelCase name
 import locationsArray from '../init-locations.js';
 
@@ -25,7 +25,7 @@ const inside = (device, bounds) => {
  * Can be easily added to any web page.
  * Includes GeoLocation API example.
  * @module location/getLocation
- * @author Gundu Pooja
+ * @author pooja gundu
  */
 export default function getLocation() {
   if (!navigator.geolocation) {
@@ -73,4 +73,3 @@ export default function getLocation() {
     );
   }
 }
-

@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Gundu Pooja</title>
-
     <link
       rel="stylesheet"
       href="./styles/main.css"
@@ -18,25 +17,48 @@
   <body class="bgimg" id="background">
     <main>
       <article class="caption">
-          <br>
           <h1> Gundu Pooja</h1>
         <div id="cbox"></div>
         
          <div class="border" id="greeting">Hello!</div>
         
         <div id="location">Welcome to <span id="locationAnswer">The HUNT GAME</span></div>
-        <div id="error message">Error<span id="error message"></span></div>
-        <div id="device-lat">Latitude of the Device<span id="location latitude"></span></div>
-        <div id="device-long">Longitude of the Device<span id="location longitude"></span></div>
+        <p>Click the button to get your coordinates.</p>
 
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+        <!-- <div id="error message">Error<span id="error message"></span></div>
+        <div id="device-lat">Latitude of the Device<span id="location latitude"></span></div> -->
+        <!-- <div id="device-long">Longitude of the Device<span id="location longitude"></span></div> -->
       </article>
+
+      <a  class = "b" href="https://github.com/GUNDUPOOJA/pg-client-hunt"> 
+        Source Code </a>
     </main>
-
     <!-- paths are root-relative -->
-
-  </body>
-  </html>
-  <script type="module" src="./scripts/main.js"></script>
+ 
+    <script type="module" src="./scripts/main.js"></script>
 <script>
-  document.window.addEventListener('load','main');
+    // document.window.addEventListener('load','main');
+
+  var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
 </script>
+
+</body>
+</html>
+
