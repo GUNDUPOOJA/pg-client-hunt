@@ -3,19 +3,19 @@
 import locationsArray from '../init-locations.js';
 
 const inside = (device, bounds) => {
-  // console.log(`CHECKING inside ${bounds.Name}`);
-  // console.log(device);
-  // console.log(bounds);
-  // console.log(device.latitude > bounds.South);
-  // console.log(device.latitude < bounds.North);
-  // console.log(device.longitude > bounds.West);
-  // console.log(device.longitude < bounds.East);
+  console.log(`CHECKING inside ${bounds.Name}`);
+  console.log(device);
+  console.log(bounds);
+  console.log(device.latitude > bounds.South);
+  console.log(device.latitude < bounds.North);
+  console.log(device.longitude > bounds.West);
+  console.log(device.longitude < bounds.East);
   const ans =
     device.latitude > bounds.South &&
     device.latitude < bounds.North &&
     device.longitude > bounds.West &&
     device.longitude < bounds.East;
-  // console.log(`CHECKING ${bounds.Name} ANS: ${ans}`);
+   console.log(`CHECKING ${bounds.Name} ANS: ${ans}`);
   return ans;
 };
 
@@ -42,7 +42,7 @@ export default function getLocation() {
       (position) => {
         document.querySelector('#device-lat').innerHTML = '';
         document.querySelector('#device-long').innerHTML = '';
-        document.querySelector('#locationAnswer').innerHTML = 'THE HUNT GAME';
+        document.querySelector('#locationAnswer').innerHTML = 'The Hunt Game';
 
         if (position === undefined) {
           document.querySelector('#error-message').innerHTML =

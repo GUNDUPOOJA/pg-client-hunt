@@ -12,6 +12,16 @@ export default [
     'Quest-Location': 'Faustiana-Faustiana One',
   },
   {
+    Name: 'horizons west apartments',
+    North: 40.3559234,
+    West: -94.88234109999999,
+    South: 40.3559234,
+    East: -94.8823410999999,
+    Notes: 'circle',
+    Attachments: '',
+    'Quest-Location': 'Faustiana-Faustiana One',
+  },
+  {
     Name: 'Faustiana Two',
     North: 40.343579,
     West: -94.89084,
